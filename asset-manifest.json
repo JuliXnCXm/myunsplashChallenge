@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/myunsplashChallenge/static/css/main.8f44fe5b.css",
+    "main.css": "/myunsplashChallenge/static/css/main.09ac02d3.css",
     "main.js": "/myunsplashChallenge/static/js/main.9330f262.js",
     "static/media/logo.svg": "/myunsplashChallenge/static/media/logo.c888ca72341518f28eb4c46adc4836f2.svg",
     "index.html": "/myunsplashChallenge/index.html",
     "static/media/searchIcon.svg": "/myunsplashChallenge/static/media/searchIcon.60b0f9e07b05a65ad815e66531c6431f.svg",
-    "main.8f44fe5b.css.map": "/myunsplashChallenge/static/css/main.8f44fe5b.css.map",
+    "main.09ac02d3.css.map": "/myunsplashChallenge/static/css/main.09ac02d3.css.map",
     "main.9330f262.js.map": "/myunsplashChallenge/static/js/main.9330f262.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f44fe5b.css",
+    "static/css/main.09ac02d3.css",
     "static/js/main.9330f262.js"
   ]
 }
