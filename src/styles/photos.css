@@ -1,0 +1,130 @@
+
+.photos--container {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px ;
+    column-count: 3;
+}
+.container--image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.38);
+    border-radius: 24px;
+    object-fit: cover;
+    position: relative;
+    max-width: 800px;
+    text-align: end;
+}
+.container--image img {
+    width: 100%;
+    flex-flow: column wrap;
+    min-height: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.38);
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.container--image:nth-child(-n+3) {
+    height: 350px;
+}
+.container--image:nth-child(3n+4) {
+    height: 580px;
+}
+
+
+.infoContainer {
+    visibility: hidden;
+}
+
+.infoContainer button {
+    width: 40%;
+    height: 31px;
+    background-color: transparent;
+    border: 1px solid #EB5757;
+    box-sizing: border-box;
+    border-radius: 38px;
+    color: #EB5757;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.infoContainer span {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: #fff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: initial;
+    line-height: 22px;
+
+}
+.infoContainer span:hover  {
+    color: #EB5757;
+}
+
+.container--image:hover > .infoContainer {
+    cursor: pointer;
+    visibility: visible;
+}
+
+
+.infoContainer button:hover {
+    background-color: #EB5757;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* css for modal delete photo */
+.deletePhotoContainer {
+    width: 560px;
+    background-color: #FFFFFF;
+    height: 230px;
+    padding: 32px;
+    border-radius: 12px;
+    margin: 0 auto;
+    border: 1px solid wheat;
+    position: sticky;
+    bottom: 500px;
+    z-index: 1;
+}
+
+.deletePhotoContainer div {
+    display: flex;
+    justify-content: inherit;
+
+}
+
+.deletePhotoContainer input {
+    border: 1px solid #4F4F4F;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.1));
+    border-radius: 12px;
+    height: 55px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+#buttonDelete {
+    background-color: #EB5757
+}
+
+@media screen and (max-width: 1000px) {
+    .photos--container {
+        column-count: 2;
+    }
+    .container--image:nth-child(-n+3) {
+        height: 250px;
+    }
+    .container--image:nth-child(3n+4) {
+        height: 480px;
+    }
+}
